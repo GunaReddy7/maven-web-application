@@ -27,6 +27,9 @@ jobs:
       
     - name: Log in to Docker Hub
       uses:  ‘docker/login-action@v1’ 
-      with: 
-        username: ‘gunareddy7’ 
-        password: ‘9160587266g@A’
+      [16:30] Venugopal P
+    - name: Login to DockerHub
+       run: |
+        echo "${{ secrets.DOCKERHUB_PASS }}" | docker login -u "gunareddy7" --password-stdin
+
+
